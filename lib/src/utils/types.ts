@@ -1,6 +1,7 @@
 export enum ENetworks {
 	regtest = 'regtest',
 	testnet = 'testnet',
+	signet = 'signet',
 	mainnet = 'mainnet',
 }
 
@@ -488,6 +489,7 @@ export const DefaultLdkDataShape: TLdkData = {
 export type TAvailableNetworks =
 	| 'bitcoin'
 	| 'bitcoinTestnet'
+	| 'bitcoinSignet'
 	| 'bitcoinRegtest';
 
 export type TAccount = {

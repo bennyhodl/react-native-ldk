@@ -439,6 +439,8 @@ func getNetwork(_ network: String) -> (Network, Currency)? {
         return (Network.Regtest, Currency.Regtest)
     case "testnet":
         return (Network.Testnet, Currency.BitcoinTestnet)
+    case "signet":
+        return (Network.Signet, Currency.Signet)
     case "mainnet":
         return (Network.Bitcoin, Currency.Bitcoin)
     default:
